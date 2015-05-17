@@ -1,0 +1,63 @@
+{
+  "name": "Reader",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number"
+    },
+    "exp": {
+      "type": "number"
+    },
+    "readings": {
+      "type": "Reading"
+    },
+    "tags": {
+      "type": "Tag"
+    },
+    "followers": {
+      "type": "Reader"
+    },
+    "following": {
+      "type": "Reader"
+    },
+    "achievements": {
+      "type": "Achievement"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "readings": {
+      "type": "hasMany",
+      "model": "Reading",
+      "foreignKey": ""
+    },
+    "tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "foreignKey": ""
+    },
+    "following": {
+      "type": "hasMany",
+      "model": "Reader",
+      "foreignKey": ""
+    },
+    "achievements": {
+      "type": "hasMany",
+      "model": "Achievement",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "Tag": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Suggestion": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Achievement": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "AppQuestion": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Reading": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Reader": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "UserQuestion": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "Answer": {
+    "dataSource": "mongo",
+    "public": true
+  }
+}

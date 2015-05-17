@@ -1,0 +1,38 @@
+{
+  "name": "Answer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "downVotes": {
+      "type": "number"
+    },
+    "upVotes": {
+      "type": "number"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Reader",
+      "foreignKey": ""
+    },
+    "question": {
+      "type": "belongsTo",
+      "model": "UserQuestion",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
